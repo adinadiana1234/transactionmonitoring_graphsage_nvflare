@@ -7,7 +7,7 @@ https://github.com/NVIDIA/NVFlare/tree/main/examples/advanced/gnn
 
 Here’s a high-level breakdown of what happens:
 
-1. ##Model Creation## : The example shows how to set up and initialize a GNN model (GraphSAGE) using PyTorch Geometric. This model learns representations of nodes in a graph, making it well-suited for tasks like classifying transactions based on their connections.
+1. Model Creation : The example shows how to set up and initialize a GNN model (GraphSAGE) using PyTorch Geometric. This model learns representations of nodes in a graph, making it well-suited for tasks like classifying transactions based on their connections.
 
 2. Federated Learning Setup: Federated learning is employed here, meaning multiple clients (e.g., banks or organizations) collaborate to train a shared model without sharing their private data. Each client trains the model locally on their data, and only the model updates are shared with a central server. The server aggregates these updates to improve the global model.
 
@@ -19,6 +19,11 @@ Here’s a high-level breakdown of what happens:
 4. Inference Model: After training, the resulting model can be used for inference—making predictions on new, unseen transactions by analyzing their graph-based connections. This step is also included in the workflow to evaluate the model’s effectiveness after training.
 
 In short, this example guides you through setting up a GNN model, applying federated learning to train it across multiple clients, and using the trained model to make predictions about transactions.
+
+## Deployment
+
+[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/adinadiana1234/transactionmonitoring_graphsage_nvflare/archive/refs/heads/main.zip)
+
 
 ## Cloudinit.sh Script Actions
 
